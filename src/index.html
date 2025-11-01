@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern ve responsive web sitesi projesi">
+    <meta name="keywords" content="html, css, web tasarım">
+    <title>Web Projesi - Modern Tasarım</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <load src="partials/header.html" />
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">
+                    GoIT
+                </a>
+    
+                <!-- Desktop Navigation -->
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Özellikler</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Hakkımızda</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+    
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" type="button" aria-label="Menüyü aç">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link">Ana Sayfa</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#features" class="mobile-nav-link">Özellikler</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#about" class="mobile-nav-link">Hakkımızda</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contact" class="mobile-nav-link">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <load src="partials/hero.html" />
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Vite Projesi Başarıyla Kuruldu! 🚀</h1>
+                <p>Modern web geliştirme için hazırsın.</p>
+                <a href="#features" class="hero-btn">Özellikleri Keşfet</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <load src="partials/features.html" />
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">Hakkımızda</h2>
+        
+                <div class="about-content">
+                    <!-- PORTFOLIO SECTION -->
+                    <section class="portfolio section" id="portfolio">
+                        <div class="container">
+                            <h2 class="section-title">Projelerimiz</h2>
+                            <p class="portfolio-subtitle">En son tamamladığımız çalışmalar</p>
+                    
+                            <!-- Filter Buttons -->
+                            <div class="portfolio-filters">
+                                <button class="filter-btn active" data-filter="all">Tümü</button>
+                                <button class="filter-btn" data-filter="web">Web Tasarım</button>
+                                <button class="filter-btn" data-filter="app">Mobil App</button>
+                                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                            </div>
+                    
+                            <!-- Portfolio Grid -->
+                            <div class="portfolio-grid">
+                    
+                                <!-- Portfolio Item 1 -->
+                                <div class="portfolio-item" data-category="web">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">🌐</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">E-Ticaret Sitesi</h3>
+                                                <p class="portfolio-overlay-text">Modern ve kullanıcı dostu online mağaza</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">Web Tasarım</span>
+                                            <h3 class="portfolio-title">E-Ticaret Projesi</h3>
+                                            <p class="portfolio-description">React & Node.js ile geliştirilmiş full-stack proje</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Portfolio Item 2 -->
+                                <div class="portfolio-item" data-category="app">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">📱</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">Fitness Uygulaması</h3>
+                                                <p class="portfolio-overlay-text">Kişiselleştirilmiş antrenman takibi</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">Mobil App</span>
+                                            <h3 class="portfolio-title">Fitness Tracker</h3>
+                                            <p class="portfolio-description">React Native ile cross-platform mobil uygulama</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Portfolio Item 3 -->
+                                <div class="portfolio-item" data-category="ui">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">🎨</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">Dashboard Tasarımı</h3>
+                                                <p class="portfolio-overlay-text">Modern admin paneli arayüzü</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">UI/UX</span>
+                                            <h3 class="portfolio-title">Admin Dashboard</h3>
+                                            <p class="portfolio-description">Figma ile tasarlanmış profesyonel arayüz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Portfolio Item 4 -->
+                                <div class="portfolio-item" data-category="web">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">💼</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">Kurumsal Web Sitesi</h3>
+                                                <p class="portfolio-overlay-text">Şirket tanıtım ve portfolyo sitesi</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">Web Tasarım</span>
+                                            <h3 class="portfolio-title">Corporate Website</h3>
+                                            <p class="portfolio-description">HTML, CSS ve JavaScript ile responsive tasarım</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Portfolio Item 5 -->
+                                <div class="portfolio-item" data-category="app">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">🍕</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">Yemek Sipariş Uygulaması</h3>
+                                                <p class="portfolio-overlay-text">Online yemek sipariş platformu</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">Mobil App</span>
+                                            <h3 class="portfolio-title">Food Delivery App</h3>
+                                            <p class="portfolio-description">Flutter ile geliştirilmiş mobil uygulama</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Portfolio Item 6 -->
+                                <div class="portfolio-item" data-category="ui">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-image">
+                                            <div class="portfolio-placeholder">
+                                                <span class="portfolio-icon">✨</span>
+                                            </div>
+                                            <div class="portfolio-overlay">
+                                                <h3 class="portfolio-overlay-title">Landing Page</h3>
+                                                <p class="portfolio-overlay-text">Dönüşüm odaklı sayfa tasarımı</p>
+                                                <a href="#" class="portfolio-link">Detayları Gör →</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <span class="portfolio-category">UI/UX</span>
+                                            <h3 class="portfolio-title">Product Landing</h3>
+                                            <p class="portfolio-description">Yüksek dönüşüm odaklı modern tasarım</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                    
+                            <!-- Load More Button -->
+                            <div class="portfolio-actions">
+                                <button class="load-more-btn">Daha Fazla Yükle</button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- About Image -->
+                    <div class="about-image">
+                        <div class="about-image-wrapper">
+                            <div class="about-image-placeholder">
+                                <span class="placeholder-icon">🎓</span>
+                            </div>
+                            <!-- Decorative elements -->
+                            <div class="about-decoration about-decoration-1"></div>
+                            <div class="about-decoration about-decoration-2"></div>
+                        </div>
+                    </div>
+        
+                    <!-- About Text -->
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Modern Web Geliştirme Eğitimi</h3>
+                        <p class="about-description">
+                            GoIT Academy olarak, öğrencilerimize en güncel web teknolojilerini
+                            öğretiyoruz. HTML, CSS, JavaScript ve modern frameworkler ile
+                            profesyonel projeler geliştirmeyi öğrenin.
+                        </p>
+                        <p class="about-description">
+                            Projelerimizde gerçek dünya senaryolarını kullanarak, sektörde
+                            aranılan beceriler kazandırıyoruz. Her öğrenci, kendi portföyünü
+                            oluşturarak mezun oluyor.
+                        </p>
+        
+                        <!-- Stats -->
+                        <ul class="about-stats">
+                            <li class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Mezun Öğrenci</span>
+                            </li>
+                            <li class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Proje Tamamlandı</span>
+                            </li>
+                            <li class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">İş Bulma Oranı</span>
+                            </li>
+                        </ul>
+        
+                        <!-- CTA Button -->
+                        <a href="#contact" class="about-btn">Bize Katıl</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <load src="partials/footer.html" />
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">İletişime Geçin</h2>
+            <p class="contact-subtitle">Projeleriniz için bizimle iletişime geçin</p>
+    
+            <div class="contact-content">
+    
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">İletişim Bilgileri</h3>
+                    <p class="contact-info-text">
+                        Sorularınız mı var? Size yardımcı olmaktan mutluluk duyarız.
+                        Bize aşağıdaki bilgilerden ulaşabilirsiniz.
+                    </p>
+    
+                    <ul class="contact-list">
+                        <!-- Phone -->
+                        <li class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <span class="contact-icon">📞</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Telefon</h4>
+                                <a href="tel:+905551234567" class="contact-link">
+                                    +90 555 123 45 67
+                                </a>
+                            </div>
+                        </li>
+    
+                        <!-- Email -->
+                        <li class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <span class="contact-icon">📧</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">E-posta</h4>
+                                <a href="mailto:info@goit.com" class="contact-link">
+                                    info@goit.com
+                                </a>
+                            </div>
+                        </li>
+    
+                        <!-- Address -->
+                        <li class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <span class="contact-icon">📍</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Adres</h4>
+                                <p class="contact-text">
+                                    Bandırma, Balıkesir<br>
+                                    Türkiye
+                                </p>
+                            </div>
+                        </li>
+    
+                        <!-- Hours -->
+                        <li class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <span class="contact-icon">🕐</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Çalışma Saatleri</h4>
+                                <p class="contact-text">
+                                    Pazartesi - Cuma<br>
+                                    09:00 - 18:00
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+    
+                    <!-- Social Media -->
+                    <div class="contact-social">
+                        <h4 class="contact-social-title">Bizi Takip Edin</h4>
+                        <div class="contact-social-links">
+                            <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                                <span>📷</span>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                                <span>🐦</span>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                                <span>👍</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <span>💼</span>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                                <span>💻</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 class="contact-form-title">Mesaj Gönderin</h3>
+    
+                    <form class="contact-form" id="contactForm">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Adınız Soyadınız *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Adınızı girin"
+                                required>
+                        </div>
+    
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-posta Adresiniz *</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="E-posta adresinizi girin" required>
+                        </div>
+    
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefon Numaranız</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+90 5XX XXX XX XX">
+                        </div>
+    
+                        <!-- Subject -->
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Konu *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Konu seçin</option>
+                                <option value="web">Web Tasarım</option>
+                                <option value="mobile">Mobil Uygulama</option>
+                                <option value="ui">UI/UX Tasarım</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+    
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mesajınız *</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Mesajınızı yazın..."
+                                rows="5" required></textarea>
+                        </div>
+    
+                        <!-- Checkbox -->
+                        <div class="form-group form-checkbox-group">
+                            <label class="form-checkbox-label">
+                                <input type="checkbox" name="terms" class="form-checkbox" required>
+                                <span class="checkbox-text">
+                                    <a href="#" class="checkbox-link">Gizlilik politikasını</a> okudum ve kabul ediyorum *
+                                </span>
+                            </label>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <button type="submit" class="form-submit-btn">
+                            <span class="btn-text">Mesaj Gönder</span>
+                            <span class="btn-icon">📨</span>
+                        </button>
+    
+                        <!-- Form Message -->
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">GoIT Studio</div>
+                <p>
+                    Made with <span class="footer-heart">❤️</span> by GoIT Students
+                </p>
+                <p>&copy; 2025 GoIT Studio. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

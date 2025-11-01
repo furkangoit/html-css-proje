@@ -1,0 +1,316 @@
+.portfolio {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+    position: relative;
+}
+
+.portfolio .section-title {
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.portfolio-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+/* Filter Buttons */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+.filter-btn.active {
+    background: var(--gradient-primary);
+    color: var(--text-light);
+    border-color: transparent;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: all var(--transition-normal);
+}
+
+.portfolio-item.hide {
+    opacity: 0;
+    transform: scale(0.8);
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Portfolio Card */
+.portfolio-card {
+    background-color: var(--bg-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: all var(--transition-normal);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-heavy);
+}
+
+/* Portfolio Image */
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+}
+
+.portfolio-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-slow);
+}
+
+.portfolio-card:hover .portfolio-placeholder {
+    transform: scale(1.1);
+}
+
+.portfolio-icon {
+    font-size: 80px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Portfolio Overlay */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(28, 28, 28, 0.7) 0%,
+            rgba(28, 28, 28, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    transform: translateY(20px);
+    transition: transform var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-overlay-title {
+    transform: translateY(0);
+}
+
+.portfolio-overlay-text {
+    font-size: 15px;
+    color: var(--text-light);
+    opacity: 0.9;
+    margin-bottom: 20px;
+    transform: translateY(20px);
+    transition: transform var(--transition-normal) 0.1s;
+}
+
+.portfolio-card:hover .portfolio-overlay-text {
+    transform: translateY(0);
+}
+
+.portfolio-link {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    border-radius: 50px;
+    text-decoration: none;
+    transform: translateY(20px);
+    transition: all var(--transition-normal) 0.2s;
+}
+
+.portfolio-card:hover .portfolio-link {
+    transform: translateY(0);
+}
+
+.portfolio-link:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Portfolio Info */
+.portfolio-info {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.portfolio-category {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: rgba(255, 107, 8, 0.1);
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 8px 0;
+}
+
+.portfolio-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Portfolio Actions */
+.portfolio-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.load-more-btn {
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-light);
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: var(--shadow-medium);
+    transition: all var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.load-more-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.load-more-btn:active {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 60px 0;
+    }
+
+    .portfolio .section-title {
+        font-size: 32px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .portfolio-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .portfolio-icon {
+        font-size: 60px;
+    }
+
+    .load-more-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

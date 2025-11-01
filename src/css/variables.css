@@ -1,0 +1,59 @@
+:root {
+    /* GoIT Orange Colors */
+    --primary-color: #ff6b08;
+    --primary-light: #ff8534;
+    --primary-dark: #e85d07;
+    --secondary-color: #212121;
+    --accent-color: #ffa040;
+
+    /* Text Colors */
+    --text-color: #757575;
+    --text-dark: #212121;
+    --text-light: #ffffff;
+
+    /* Background Colors */
+    --bg-dark: #1c1c1c;
+    --bg-medium: #2d2d2d;
+    --bg-light: #f7f7f7;
+    --bg-white: #ffffff;
+    --border-color: #ececec;
+
+    /* GoIT Gradient */
+    --gradient-primary: linear-gradient(135deg, #ff6b08 0%, #ffa040 100%);
+    --gradient-dark: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%);
+
+    /* Typography */
+    --font-main: 'Roboto', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
+
+    /* Font Sizes */
+    --fs-hero: 56px;
+    --fs-section-title: 42px;
+    --fs-card-title: 20px;
+    --fs-body: 16px;
+    --fs-small: 14px;
+
+    /* Spacing */
+    --section-padding: 94px;
+    --section-padding-mobile: 60px;
+    --container-width: 1200px;
+    --gap-small: 10px;
+    --gap-medium: 30px;
+    --gap-large: 50px;
+
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --desktop: 1200px;
+
+    /* Shadows - Orange tinted */
+    --shadow-light: 0 2px 8px rgba(255, 107, 8, 0.1);
+    --shadow-medium: 0 4px 16px rgba(255, 107, 8, 0.15);
+    --shadow-heavy: 0 8px 24px rgba(255, 107, 8, 0.2);
+    --shadow-primary: 0 10px 30px rgba(255, 107, 8, 0.25);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}

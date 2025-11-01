@@ -1,0 +1,23 @@
+/* Responsive styles */
+
+/* Tablet - 768px+ */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+/* Desktop - 1200px+ */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .section {
+        padding: var(--section-padding) 0;
+    }
+}
