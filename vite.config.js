@@ -4,11 +4,15 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  base: '/html-css-proje/',  // ← Repository adını buraya yaz
   build: {
-    rollupOptions: {
-      input: './index.html',
-    },
     outDir: '../dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './src/index.html'  // ← BU ÇOK ÖNEMLİ!
+      }
+    }
   },
   plugins: [
     injectHTML(), 
